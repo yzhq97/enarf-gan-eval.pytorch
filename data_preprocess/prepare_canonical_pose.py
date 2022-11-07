@@ -7,7 +7,7 @@ sys.path.append("../")
 from libraries.smpl_utils import get_pose
 
 for gender in ["MALE", "FEMALE", "NEUTRAL"]:
-    smpl = SMPL(model_path="../../smpl_data", gender='MALE', batch_size=1)
+    smpl = SMPL(model_path="../smpl_data", gender='MALE', batch_size=1)
     poses = np.zeros((1, 24, 3))
     with torch.no_grad():
         A = get_pose(smpl, body_pose=torch.tensor(poses[:, 1:]).float(),

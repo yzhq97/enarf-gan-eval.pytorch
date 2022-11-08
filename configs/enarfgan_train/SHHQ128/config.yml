@@ -1,5 +1,5 @@
 out_root: data
-out: GAN/SHHQ/example
+out: GAN/SHHQ128
 
 dataset:
   name: human_v2
